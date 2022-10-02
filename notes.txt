@@ -60,4 +60,21 @@ Webpack by default only works for js and json.
 If we try to load any other files, webpack will throw and error 
 and will ask for to use appropriate loaders.
 
+=====
+CSS Loader 
+=====
 
+To use css files in js file, we can use css loader which will handle
+the files whose extensions is css.
+
+npm i -D css-loader
+
+====
+webpack.config.js file is used to tweak around the behaviour of webpack.
+
+In webpack.config.js, we need to export an object in commonjs style.
+We are telling webpack, how to process css module.
+
+
+Thus, we gave the webpack the intelligence its needed to understand 
+how to load css files.
