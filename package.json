@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:prod": "webpack --mode production",
-    "build:dev": "webpack --mode development"
+    "bundle:prod": "webpack --mode production",
+    "bundle:dev": "webpack --mode development",
+    "bundle:prod:watch": "npm run bundle:prod -- --watch",
+    "bundle:dev:watch": "npm run bundle:dev -- --watch"
   },
   "keywords": [],
   "author": "",

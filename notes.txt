@@ -19,3 +19,17 @@ Why we need webpack??
 ===
 If we try to run to src/index/js file, it will throw an error as 
 we are using es module syntax.
+
+
+===
+Webpack optimization
+===
+
+1. The benefit of using watch flag is whenever we make changes in our
+   javascript files, we do not have to run the "bundle:prod" command again and again.
+
+2. Whenever when a function is imported from another file and if we are using only once
+    in that case, webpack will do optimization on its own (in production mode) and it will
+    not include the body or the function defination of the function.
+
+    
