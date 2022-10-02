@@ -151,5 +151,47 @@ Fixing the Typescript
 npm i -D ts-loader
 
 
+===
+Rendering react component
+===
+npm i react react-dom
+
+npm i -D @babel/core @babel/preset-react babel-loader
+
+
+@babel/core ---> We need to add babel core so that we can transpile the jsx
+                 code to something that browser can understand.
+
+@babel/preset-react --> It tell babel if encounter jsx, transfile it to react code (react element) 
+
+
+
+in webpack.config.js 
+===
+we will inform webpack that use babel loader for babel
+and use the preset of preset-react.
+
+
+===
+Webpack is use to modularize the application and put all the js files from application to single js file.
+
+
+Loaders
+====
+The job of the loaders is work into the things
+while things are getting loaded.
+
+So Before one single output js file is created,
+whatever the configuration we need to do before that 
+like loading css or svg i.e. being done into the loaders.
+
+
+And whatever the more configuration we need to do after the final
+output js is created that all is done in plugins.
+
+
+
+
+
 
 
