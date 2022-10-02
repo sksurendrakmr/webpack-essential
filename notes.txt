@@ -52,4 +52,12 @@ and it will take lots of time to load the data.
 
 
 
+======
+Webpack Loaders 
+=======
+Webpack by default only works for js and json.
+
+If we try to load any other files, webpack will throw and error 
+and will ask for to use appropriate loaders.
+
 
