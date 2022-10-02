@@ -145,4 +145,11 @@ Using Typescript
 ====
 
 
+==
+Fixing the Typescript
+===
+npm i -D ts-loader
+
+
+
 
