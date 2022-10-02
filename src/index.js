@@ -21,5 +21,9 @@ console.log(add(3,4));
  * Only browser has access to document.
  */
 
-const WelcomeMessageDiv = WelcomeMessage({person:"suri"});
-console.log(WelcomeMessageDiv);
+const WelcomeMessageText = WelcomeMessage({person:"suri"});
+
+//Now we have the access of document as we have an HTML file and with HTML file, we alrady have a DOM with us.
+const WelcomeMessageDiv = document.createElement('div');
+WelcomeMessageDiv.innerText = WelcomeMessageText;
+document.body.appendChild(WelcomeMessageDiv);
