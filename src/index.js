@@ -1,4 +1,4 @@
-import {add} from './math'
+import {add, multiply} from './math'
 
 console.log("Running webpack!!!");
 console.log(add(3,4));

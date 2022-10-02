@@ -32,4 +32,24 @@ Webpack optimization
     in that case, webpack will do optimization on its own (in production mode) and it will
     not include the body or the function defination of the function.
 
-    
+
+===
+Dead code removal
+===
+It will automatically remove or exclude the unused code in main.js
+i.e. it will only include program which we are using.
+In this case, it will not include multiply, divide and substract function
+in main.js (final bundle)
+
+The advantage is the bundle size will be less.
+
+As in client side in slow network, the bundle size is really matters.
+
+E.g. If we are using lots of libraries and if we include everything and
+in scenario where we are not using 100% of the libraries.
+Then user will not have good experience as javascript will keep on loading 
+and it will take lots of time to load the data.
+
+
+
+
