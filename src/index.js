@@ -1,4 +1,5 @@
 import {add, multiply} from './math'
+import { prefixDecorate } from './StringUtil';
 import { WelcomeMessage } from './WelcomeMessage/WelcomeMessage';
 /**
  * we will get error while importing the css.
@@ -27,3 +28,13 @@ const WelcomeMessageText = WelcomeMessage({person:"suri"});
 const WelcomeMessageDiv = document.createElement('div');
 WelcomeMessageDiv.innerText = WelcomeMessageText;
 document.body.appendChild(WelcomeMessageDiv);
+
+/**
+ * First thing webpack is complaining that where is prefixDecorate() i.e StringUtil file.
+ * 
+ * But if we add .ts extention while importing the function i.e.
+ * import { prefixDecorate } from './StringUtil.ts';
+ * 
+ * Then we will get a suggestion that we need an appropriate loader
+ */
+console.log(prefixDecorate("Hello, webpack")); //throw error

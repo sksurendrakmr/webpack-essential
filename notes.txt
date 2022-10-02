@@ -140,4 +140,9 @@ MiniCssExtractPlugin takes all the css and generate bundled optimized
 css which now can be used by html-webpack-plugin to load the css from a file and not a inline way.
 
 
+====
+Using Typescript
+====
+
+
 
