@@ -1,0 +1,21 @@
+The webpack scripts which we have added in package.json will run the webpack binary 
+in different mode.
+
+Why we having different mode for webpack?
+For production, webpack will do different kind of optimization and for development
+it will do different kind of optimization.
+
+
+Webpack are extremely configurable. We can extend the functionalities
+by adding more loaders, more plugins.
+
+
+When we run build:prod script, it will generate main.js in
+root dist folder by default.
+
+By default, webpack take input from src/index.js 
+
+Why we need webpack??
+===
+If we try to run to src/index/js file, it will throw an error as 
+we are using es module syntax.
