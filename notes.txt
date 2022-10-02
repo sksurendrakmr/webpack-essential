@@ -117,3 +117,27 @@ use: ['style-loader','css-loader'] -> the output of css loader is passed to styl
 think of it as function where the output of last will go previous function.
 
 
+
+====
+Chaining plugin together in webpack 
+====
+Upto this configuration, we will the css classes as inline style when
+we run and inspect in browser.
+The reason for that is we are using style loader.
+
+==
+To not have this behaviour, we will use another plugin called :
+mini-css-extract-plugin
+
+npm i -D mini-css-extract-plugin
+
+
+now instead of style loader, we will use MiniCssExtractPlugin.loader.
+Now when we run the app, instead of inline style., it will use main.css file
+to apply the css.
+
+MiniCssExtractPlugin takes all the css and generate bundled optimized 
+css which now can be used by html-webpack-plugin to load the css from a file and not a inline way.
+
+
+
